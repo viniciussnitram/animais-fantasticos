@@ -168,3 +168,15 @@ body .grid-section.contact .data li::before {
     margin-right: 20px;
     background: #FB5;
 }
+
+body .copy {
+    grid-column: 3 / 5;
+    margin-bottom: 2rem;
+    background: #FB5;
+}
+
+body .copy p {
+    padding: 20px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: bold;
+}
