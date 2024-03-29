@@ -57,7 +57,9 @@ body .grid-section {
     margin-bottom: 4rem;
 }
 
-body .grid-section.animals .title {
+body .grid-section.animals .title,
+body .grid-section.faq .title,
+body .grid-section.contact .title {
     font-family: 'Playfair Display SC', georgia;
     font-size: 6rem;
     line-height: 1;
@@ -116,4 +118,31 @@ body .grid-section.animals .animals-description {
 
 body .grid-section.animals .animals-description section {
     margin-bottom: 3rem;
+}
+
+body .grid-section.faq .faq-list {
+    grid-column: 2 / 4;
+}
+
+body .grid-section.faq .faq-list dt {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: bold;
+    margin-top: 2rem;
+    margin-bottom: .5rem;
+    color: #E54;
+}
+
+body .grid-section.faq .faq-list dt::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 10px;
+    margin-right: 10px;
+    background: #FB5;
+}
+
+body .grid-section.faq .faq-list dd {
+    font-family: Helvetica, Arial;
+    margin-bottom: .5rem;
+    margin-left: 30px;
 }
