@@ -135,6 +135,7 @@ body .grid-section.faq .faq-list dt {
     margin-top: 2rem;
     margin-bottom: .5rem;
     color: #E54;
+    cursor: pointer;
 }
 
 body .grid-section.faq .faq-list dt::before {
@@ -245,5 +246,34 @@ body .grid-section.animals .animals-description.js-tabcontent section.active {
     to {
         opacity: 1;
         transform: translate3d(0px, 0px, 0px);
+    }
+}
+
+.js body .grid-section.faq .faq-list.js-accordion dd {
+    display: none;
+}
+
+.js body .grid-section.faq .faq-list.js-accordion dt::after {
+    content: '⬎';
+    margin-left: 10px;
+}
+
+.js body .grid-section.faq .faq-list.js-accordion dt.active::after {
+    content: '⬏';
+}
+
+.js body .grid-section.faq .faq-list.js-accordion dd.active {
+    display: block;
+    animation: slideDown .5s forwards;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        max-height: 0px;
+    }
+    to {
+        opacity: 1;
+        max-height: 200px;
     }
 }
