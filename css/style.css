@@ -277,3 +277,18 @@ body .grid-section.animals .animals-description.js-tabcontent section.active {
         max-height: 200px;
     }
 }
+
+.js body .grid-section.animals.js-scroll, 
+.js body .grid-section.faq.js-scroll, 
+.js body .grid-section.contact.js-scroll {
+    opacity: 0;
+    transition: .3s;
+    transform: translate3d(-30px, 0px, 0px);
+}
+
+.js body .grid-section.animals.js-scroll.active, 
+.js body .grid-section.faq.js-scroll.active, 
+.js body .grid-section.contact.js-scroll.active {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
