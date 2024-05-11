@@ -228,16 +228,24 @@ body .copy p {
     }
 }
 
-.js body .grid-section.animals .animals-description.js-tabcontent section {
+.js body .grid-section.animals .animals-description[data-tab="content"] section {
     display: none;
 }
 
-body .grid-section.animals .animals-description.js-tabcontent section.active {
+body .grid-section.animals .animals-description[data-tab="content"] section.active {
     display: block !important;
     animation: show .5s forwards;
 }
 
-@keyframes show {
+body .grid-section.animals .animals-description[data-tab="content"] section.active.show-right {
+    animation: showRight .5s forwards;
+}
+
+body .grid-section.animals .animals-description[data-tab="content"] section.active.show-down {
+    animation: showDown .5s forwards;
+}
+
+@keyframes showRight {
     from {
         opacity: 0;
         transform: translate3d(-30px, 0px, 0px);
@@ -249,7 +257,19 @@ body .grid-section.animals .animals-description.js-tabcontent section.active {
     }
 }
 
-.js body .grid-section.faq .faq-list.js-accordion dd {
+@keyframes showDown {
+    from {
+        opacity: 0;
+        transform: translate3d(0px, -30px, 0px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0px, 0px, 0px);
+    }
+}
+
+.js body .grid-section.faq .faq-list[data-anime="accordion"] dd {
     display: none;
 }
 

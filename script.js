@@ -10,7 +10,8 @@ function initTabNav() {
             tabContent.forEach(content => {
                 content.classList.remove(activeClass);
             });
-            tabContent[index].classList.add(activeClass);
+            const direction = tabContent[index].dataset.anime;
+            tabContent[index].classList.add(activeClass, direction);
         }
 
         tabMenu.forEach((itemMenu, index) => {
