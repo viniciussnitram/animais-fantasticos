@@ -234,7 +234,6 @@ body .copy p {
 
 body .grid-section.animals .animals-description[data-tab="content"] section.active {
     display: block !important;
-    animation: show .5s forwards;
 }
 
 body .grid-section.animals .animals-description[data-tab="content"] section.active.show-right {
@@ -273,16 +272,16 @@ body .grid-section.animals .animals-description[data-tab="content"] section.acti
     display: none;
 }
 
-.js body .grid-section.faq .faq-list.js-accordion dt::after {
+.js body .grid-section.faq .faq-list[data-anime="accordion"] dt::after {
     content: '⬎';
     margin-left: 10px;
 }
 
-.js body .grid-section.faq .faq-list.js-accordion dt.active::after {
+.js body .grid-section.faq .faq-list[data-anime="accordion"] dt.active::after {
     content: '⬏';
 }
 
-.js body .grid-section.faq .faq-list.js-accordion dd.active {
+.js body .grid-section.faq .faq-list[data-anime="accordion"] dd.active {
     display: block;
     animation: slideDown .5s forwards;
 }
@@ -298,17 +297,17 @@ body .grid-section.animals .animals-description[data-tab="content"] section.acti
     }
 }
 
-.js body .grid-section.animals.js-scroll, 
-.js body .grid-section.faq.js-scroll, 
-.js body .grid-section.contact.js-scroll {
+.js body .grid-section.animals[data-anime="scroll"], 
+.js body .grid-section.faq[data-anime="scroll"], 
+.js body .grid-section.contact[data-anime="scroll"] {
     opacity: 0;
     transition: .3s;
     transform: translate3d(-30px, 0px, 0px);
 }
 
-.js body .grid-section.animals.js-scroll.active, 
-.js body .grid-section.faq.js-scroll.active, 
-.js body .grid-section.contact.js-scroll.active {
+.js body .grid-section.animals[data-anime="scroll"].active, 
+.js body .grid-section.faq[data-anime="scroll"].active, 
+.js body .grid-section.contact[data-anime="scroll"].active {
     opacity: 1;
     transform: translate3d(0px, 0px, 0px);
 }
