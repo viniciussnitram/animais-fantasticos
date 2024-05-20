@@ -5,6 +5,7 @@ import initScrollAnimation from './module/scroll-animation.js';
 import initModal from './module/modal.js';
 import initTooltip from './module/tooltip.js';
 import initDropdownMenu from './module/dropdown-menu.js';
+import initMenuMobile from './module/menu-mobile.js';
 
 initTabNav();
 initAccordion();
@@ -13,3 +14,4 @@ initScrollAnimation();
 initModal();
 initTooltip();
 initDropdownMenu();
+initMenuMobile();
