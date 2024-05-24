@@ -63,7 +63,8 @@ body .grid-section {
 
 body .grid-section.animals .title,
 body .grid-section.faq .title,
-body .grid-section.contact .title {
+body .grid-section.contact .title,
+body .grid-section.numbers .title {
     font-family: 'Playfair Display SC', georgia;
     font-size: 6rem;
     line-height: 1;
