@@ -315,3 +315,18 @@ body .grid-section.animals .animals-description[data-tab="content"] section.acti
     opacity: 1;
     transform: translate3d(0px, 0px, 0px);
 }
+
+[data-week]::after {
+    display: inline-block;
+    content: '';
+    width: 6px;
+    height: 6px;
+    background: #E54;
+    border-radius: 50%;
+    margin-left: 4px;
+    border: 2px solid #000;
+}
+
+[data-week].open::after {
+    background: #3F4;
+}
