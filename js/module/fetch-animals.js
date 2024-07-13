@@ -13,8 +13,8 @@ export default function initFetchAnimals() {
             });
 
             initAnimateNumbers();
-        } catch(erro) {
-            console.log(erro);
+        } catch(error) {
+            console.log(error);
         }    
     }
 
