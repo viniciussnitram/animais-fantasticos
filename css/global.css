@@ -330,3 +330,10 @@ body .grid-section.animals .animals-description[data-tab="content"] section.acti
 [data-week].open::after {
     background: #3F4;
 }
+
+.btc-price {
+    background: #3F4;
+    padding: .2rem .5rem;
+    font-weight: bold;
+    border-radius: 2px;
+}
