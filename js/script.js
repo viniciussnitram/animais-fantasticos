@@ -8,7 +8,7 @@ import initOperation from "./module/operation.js";
 import initScrollAnimation from "./module/scroll-animation.js";
 import SmoothScroll from "./module/smooth-scroll.js";
 import TabNav from "./module/tabnav.js";
-import initTooltip from "./module/tooltip.js";
+import Tooltip from "./module/tooltip.js";
 
 const tabNav = new TabNav(
   '[data-tab="menu"] li',
@@ -25,8 +25,10 @@ smothScroll.init();
 const modal = new Modal('[data-modal="open"]', '[data-modal="close"]', '[data-modal="container"]');
 modal.init();
 
+const tooltip = new Tooltip('[data-tooltip]');
+tooltip.init();
+
 initScrollAnimation();
-initTooltip();
 initDropdownMenu();
 initMenuMobile();
 initOperation();
